@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.A01_sparsearray;
 
 /**
  * @author Xiahu
