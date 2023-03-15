@@ -1,4 +1,4 @@
-package datastructure.A04_stack;
+package datastructure.A04_stack.pojo;
 
 /**
  * @author Xiahu

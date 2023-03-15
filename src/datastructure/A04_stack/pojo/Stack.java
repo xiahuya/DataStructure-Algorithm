@@ -1,10 +1,10 @@
-package datastructure.A04_stack;
+package datastructure.A04_stack.pojo;
 
 /**
  * @author Xiahu
  * @create 2023/3/14
  */
-class Stack<T> {
+public class Stack<T> {
     T[] dataArray;
 
     int top = -1;
@@ -12,7 +12,7 @@ class Stack<T> {
     String name = null;
 
     public Stack(String stackName) {
-        dataArray = (T[]) new Object[100];
+        dataArray = (T[]) new Object[10];
         this.name = stackName;
     }
 

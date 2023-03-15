@@ -1,12 +1,12 @@
-package datastructure.A04_stack;
+package datastructure.A04_stack.pojo;
 
 /**
  * @author Xiahu
  * @create 2023/3/8
  */
 public class ListNode {
-    int num;
-    ListNode next;
+    public int num;
+    public ListNode next;
 
     public ListNode(int num) {
         this.num = num;
