@@ -54,32 +54,30 @@ public class A01_LinkedListDemo {
     // 定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。
     public ListNode reverseList(ListNode head) {
         if (head == null) {
-            throw new RuntimeException("链表没有数据");
+            return null;
         }
 
         ListNode current = head;
+        ListNode next = null;
 
         // 创建新链表的头节点
-        ListNode newHead = new ListNode(0);
-        ListNode newCurrent = null;
+        ListNode reverseHeadNode  = new ListNode(0);
+
         while (true) {
             if (current == null) {
                 break;
             }
 
-            newCurrent = current;
-            if (newHead.next == null) {
-                newHead.next = newCurrent;
-            } else {
-                newCurrent.next = newHead.next;
-                newHead.next = newCurrent;
-            }
+            // 使用一个临时变量
+            next = current.next;
 
-            current = current.next;
+            current.next = reverseHeadNode.next;
+            reverseHeadNode.next = current;
+            current = next;
         }
 
-        newHead = newHead.next;
-        return newHead;
+        reverseHeadNode = reverseHeadNode.next;
+        return reverseHeadNode;
     }
 
 
