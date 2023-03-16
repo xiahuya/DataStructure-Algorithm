@@ -10,7 +10,7 @@ import java.util.LinkedList;
  * 请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，
  * 调用 min、push 及 pop 的时间复杂度都是 O(1)
  */
-public class A02_MinStack {
+public class JZ_30_MinStack {
     public static void main(String[] args) {
         //["MinStack","push","push","min","min","push","min","min","top","min","pop","push","push","min","push","pop","top","min","pop"]
         //[[],[-10],[14],[],[],[-20],[],[],[],[],[],[10],[-7],[],[-7],[],[],[],[]]

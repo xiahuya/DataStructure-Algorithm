@@ -13,7 +13,7 @@ package algorithm.leetcode.stack;
  *
  * 图解：https://www.processon.com/view/link/6400706c0766090488347c67
  */
-public class A01_CQueu {
+public class JZ_09_Stack {
     public static void main(String[] args) {
         CQueue queue = new CQueue();
         System.out.println(queue.deleteHead());
